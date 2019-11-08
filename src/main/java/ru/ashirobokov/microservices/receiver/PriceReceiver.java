@@ -32,7 +32,7 @@ public class PriceReceiver {
                 .retrieve()
                 .toEntity(String.class);
 
-        test.doOnNext(s -> LOG.info("PriceReceiver : " + s.getBody()))
+        test.doOnNext(s -> LOG.info("PriceReceiver get test message : " + s.getBody()))
                 .block();
 */
 
